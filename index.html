@@ -31,6 +31,15 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    #socialLinks button {
+  margin: 8px;
+  background-color: #0d6efd;
+  color: white;
+}
+
+#socialLinks button:hover {
+  background-color: #084298;
+}
   </style>
 </head>
 
@@ -39,11 +48,25 @@
   <p>Diploma in Computer Science</p>
   <p>Learning HTML, CSS & JavaScript</p>
 
+   <button onclick="showLinks()">Click Me</button>
+
+<div id="socialLinks" style="display: none;">
+  <br>
   <a href="https://github.com/kodeByKriti" target="_blank">
-  <button> Click Me </button>
-</a>
-  </button>
+    <button>GitHub</button>
+  </a>
+
+  <a href="https://www.linkedin.com/in/kriti-jha-b977b3399" target="_blank">
+    <button>LinkedIn</button>
+  </a>
+</div>
+  <script>
+  function showLinks() {
+    document.getElementById("socialLinks").style.display = "block";
+  }
+</script>
 </body>
 </html>
+
 
 
